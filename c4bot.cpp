@@ -23,6 +23,7 @@ void C4Bot::run() {
 }
 
 void C4Bot::move(int timeout) {
+	// Do something more intelligent here instead of returning a random move
 	std::vector<Move> moves = getMoves(state);
 	std::cout << "place_disc " << *select_randomly(moves.begin(), moves.end()) << std::endl;
 }
