@@ -19,6 +19,13 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="../Makefile" />
+		<Unit filename="../c4.cpp" />
+		<Unit filename="../c4.h" />
+		<Unit filename="../c4bot.cpp" />
+		<Unit filename="../c4bot.h" />
+		<Unit filename="../main.cpp" />
+		<Unit filename="tests.in" />
 		<Extensions>
 			<code_completion />
 			<debugger />
