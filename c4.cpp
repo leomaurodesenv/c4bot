@@ -1,5 +1,9 @@
-// c4.cpp
-// Aswin van Woudenberg
+/* c4.cpp
+ * Created by Aswin van Woudenberg <https://github.com/afvanwoudenberg>
+ * Collaboration of Leonardo Mauro <https://github.com/leomaurodesenv>
+ * link: https://github.com/afvanwoudenberg/c4bot
+ */
+
 
 #include "c4.h"
 
@@ -34,14 +38,14 @@ Player getCurrentPlayer(const State &state)
         	else if(state[r][c] == Player::O) countO++;
 		}
     }
-    return (countX > countO ? Player::O : Player::X); 
+    return (countX > countO ? Player::O : Player::X);
 }
 
 State doMove(const State &state, const Move &m)
 {
     State result = state;
 	for (int r=0; r<6; r++) {
-		if (r == 5 || result[r+1][m] != Player::None) {		
+		if (r == 5 || result[r+1][m] != Player::None) {
 		    result[r][m] = getCurrentPlayer(state);
     		return result;
 		}

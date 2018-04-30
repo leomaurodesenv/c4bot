@@ -1,5 +1,8 @@
-// c4bot.cpp
-// Aswin van Woudenberg
+/* c4bot.cpp
+ * Created by Aswin van Woudenberg <https://github.com/afvanwoudenberg>
+ * Collaboration of Leonardo Mauro <https://github.com/leomaurodesenv>
+ * link: https://github.com/afvanwoudenberg/c4bot
+ */
 
 #include "c4bot.h"
 
@@ -37,7 +40,7 @@ void C4Bot::update(std::string &key, std::string &value) {
 		std::vector<std::string> fields = split(value, ',');
 		for (std::string &field : fields) {
 			if (field == "0") {
-				state[row][col] = Player::X; 
+				state[row][col] = Player::X;
 			} else if (field == "1") {
 				state[row][col] = Player::O;
 			} else {
@@ -45,7 +48,7 @@ void C4Bot::update(std::string &key, std::string &value) {
 			}
 			col++;
 			if (col == 7) {
-				row++; 
+				row++;
 				col = 0;
 			}
 		}

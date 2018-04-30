@@ -1,5 +1,8 @@
-// c4.h
-// Aswin van Woudenberg
+/* c4.h
+ * Created by Aswin van Woudenberg <https://github.com/afvanwoudenberg>
+ * Collaboration of Leonardo Mauro <https://github.com/leomaurodesenv>
+ * link: https://github.com/afvanwoudenberg/c4bot
+ */
 
 #ifndef C4_H
 #define C4_H
