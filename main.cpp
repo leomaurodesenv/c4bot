@@ -16,7 +16,7 @@ using namespace std;
 int main() {
 
     // How send a file to test
-    //freopen("test_file.in", "r", stdin);
+    freopen("test_file.in", "r", stdin);
 
 	C4Bot bot;
 	bot.run();

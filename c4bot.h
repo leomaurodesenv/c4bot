@@ -12,11 +12,14 @@
 
 #include "c4.h"
 
+using namespace std;
+
 class C4Bot {
+    // Variables
 	int timebank;
 	int time_per_move;
-	std::string player_names[2];
-	std::string your_bot;
+	string player_names[2];
+	string your_bot;
 	int your_botid;
 	int field_columns;
 	int field_rows;
@@ -24,9 +27,13 @@ class C4Bot {
 	int round;
 	State state = { { { { Player::None } } } };
 
-	std::vector<std::string> split(const std::string &s, char delim);
-	void setting(std::string &key, std::string &value);
-	void update(std::string &key, std::string &value);
+	// Support functions
+	vector<string> split(const string &s, char delim);
+	int string2int(string &str);
+
+	// Structure functions
+	void setting(string &key, string &value);
+	void update(string &key, string &value);
 	void move(int timeout);
 
 public:
