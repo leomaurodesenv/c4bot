@@ -45,6 +45,24 @@ int C4Bot::string2int(string &str){
     return value;
 }
 
+void C4Bot::print(State &state){
+    for(int row = 0; row < field_rows; row++){
+	    for(int col = 0; col < field_columns; col++){
+        	if(state[row][col] == Player::None) cout<<"-";
+        	else if(state[row][col] == Player::X) cout<<"0";
+        	else if(state[row][col] == Player::O) cout<<"1";
+            cout<<" ";
+	    }
+	    cout<<endl;
+    }
+}
+
+Player C4Bot::get_player(bool your_bot){
+    Player player = (your_botid == 0) ? Player::X : Player::O;
+    Player opponent = (your_botid == 0) ? Player::O : Player::X;
+    return (your_bot) ? player : opponent;
+}
+
 void C4Bot::update(string &key, string &value) {
 	if (key == "round") {
 		round = string2int(value);
@@ -92,5 +110,6 @@ void C4Bot::setting(string &key, string &value) {
 void C4Bot::move(int timeout) {
 	// Do something more intelligent here instead of returning a random move
 	vector<Move> moves = getMoves(state);
+	// print(state); // print boardř
 	cout << "place_disc " << *select_randomly(moves.begin(), moves.end()) << endl;
 }

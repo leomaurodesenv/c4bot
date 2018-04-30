@@ -30,6 +30,8 @@ class C4Bot {
 	// Support functions
 	vector<string> split(const string &s, char delim);
 	int string2int(string &str);
+	void print(State &state);
+	Player get_player(bool your_bot);
 
 	// Structure functions
 	void setting(string &key, string &value);

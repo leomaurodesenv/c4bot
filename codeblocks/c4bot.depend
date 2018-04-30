@@ -10,12 +10,13 @@
 	<iterator>
 	<iostream>
 
-1525094673 source:/home/leonardo/Documents/GIT/c4bot/c4bot.cpp
+1525096198 source:/home/leonardo/Documents/GIT/c4bot/c4bot.cpp
 	"c4bot.h"
 	<iostream>
 	<sstream>
+	<string>
 
-1525095770 /home/leonardo/Documents/GIT/c4bot/c4bot.h
+1525096181 /home/leonardo/Documents/GIT/c4bot/c4bot.h
 	<string>
 	<vector>
 	"c4.h"
