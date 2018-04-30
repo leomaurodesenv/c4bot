@@ -10,7 +10,7 @@ This class offers support to begin your artificial intelligence to play connect 
 To compile your code use the Code::Blocks IDE `codeblocks/c4bot.cbp`, or command line:    
     
 
-```cpp
+```sh
 g++ -std=c++1y -static -Isrc -O2 -lm $SOURCE
 ```
     
