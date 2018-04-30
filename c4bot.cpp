@@ -82,9 +82,9 @@ void C4Bot::setting(string &key, string &value) {
 		your_bot = value;
 	} else if (key == "your_botid") {
 		your_botid = string2int(value);
-	} else if (key == "field_columns") {
+	} else if (key == "field_width") {
 		field_columns = string2int(value);
-	} else if (key == "field_rows") {
+	} else if (key == "field_height") {
 		field_rows = string2int(value);
 	}
 }
