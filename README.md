@@ -7,7 +7,7 @@ This class offers support to begin your artificial intelligence to play connect 
 
 ### Compile
     
-To compile your code use the Code::Blocks IDE `codeblocks/c4bot.cbp`, or command line:    
+To compile your code using the Code::Blocks IDE `codeblocks/c4bot.cbp`, or command line:    
     
 
 ```sh
