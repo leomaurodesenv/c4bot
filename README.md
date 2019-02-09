@@ -52,5 +52,5 @@ class C4Bot {
    
 ## Also look ~
     
-* [License MIT](https://opensource.org/licenses/MIT)
+* [License MIT](LICENSE)
 * Github: [c4bot](https://github.com/afvanwoudenberg/c4bot)
